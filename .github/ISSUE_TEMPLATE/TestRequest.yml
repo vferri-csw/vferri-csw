@@ -5,8 +5,7 @@ labels: [test]
 body: 
   - type: markdown
     attributes:
-      value: |
-        Thanks for asking Mish for a Tip. Tune into a Live stream or read Mish's articles on DEV for great GitHub tips.        
+      value: |        
   - type: input
     id: Name
     attributes:
