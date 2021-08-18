@@ -2,8 +2,6 @@ name: Test_Request_Form
 description: Template test using style form
 title: Test Request
 labels: [test]
-assignees:
- - vferri-csw
  body: 
    - type: markdown
     attributes:
