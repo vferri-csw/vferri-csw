@@ -5,7 +5,8 @@ labels: [test]
 body: 
   - type: markdown
     attributes:
-      value: |        
+      value: |       
+        Test
   - type: input
     id: Name
     attributes:
