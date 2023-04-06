@@ -23,6 +23,7 @@ body:
     id: application
     attributes:
       label: Applicativo dove riprodurlo
+      multiple: true
       options:
         - SAM
         - SAM Manager
