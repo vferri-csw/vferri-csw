@@ -76,8 +76,8 @@ body:
       label: Comportamento aspettato
       description: Chiara e concisa descrizione del comportamento aspettato
       placeholder: 
-    validations:
-      required: false
+      validations:
+        required: false
     - type: textarea
       id: additional
       attributes:
