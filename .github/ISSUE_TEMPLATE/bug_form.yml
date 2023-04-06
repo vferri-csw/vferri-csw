@@ -2,8 +2,6 @@ name: "\U0001F41B Segnalazione di Bug"
 description: Template per segnalare un bug
 title: "[BUG]: "
 labels: ["bug"]
-assignees:
-  - 
 body:
   - type: input
     id: description
