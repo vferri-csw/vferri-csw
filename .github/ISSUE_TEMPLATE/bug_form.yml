@@ -20,13 +20,18 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: download
+    id: application
     attributes:
-      label: How did you download the software?
+      label: Applicativo dove riprodurlo
       options:
-        - Homebrew
-        - MacPorts
-        - apt-get
-        - Built from source
+        - SAM
+        - SAM Manager
+        - MES
+        - WMS
+        - RGT
+        - Web API
+        - JSON Import
+        - JSON Generator
+        - Portali
     validations:
       required: true
