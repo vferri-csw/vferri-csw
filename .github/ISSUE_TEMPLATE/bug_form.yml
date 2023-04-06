@@ -36,3 +36,18 @@ body:
         - Portali
     validations:
       required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Per riprodurlo
+      description: Passi per riprodurre il comportamento
+      value: |
+        1. Vai in '...'
+        2. Clicca su '....'
+        3. Spostati in '....' 
+        4. Inserisci i valori '....'
+        5. Visualizza l'errore
+        ...
+      render: markdown
+    validations:
+      required: true
