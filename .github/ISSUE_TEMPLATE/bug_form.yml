@@ -19,8 +19,3 @@ body:
       placeholder: 
     validations:
       required: true
- - type: dropdown
-    id: application
-    attributes:
-      label: Applicativo dove riprodurlo
-      multiple: true
