@@ -19,23 +19,30 @@ body:
       placeholder: 
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: application
     attributes:
       label: Applicativo dove riprodurlo
-      multiple: true
+      description: Dove si verifica la segnalazione?
       options:
-        - SAM
-        - SAM Manager
-        - MES
-        - WMS
-        - RGT
-        - Web API
-        - JSON Import
-        - JSON Generator
-        - Portali
-    validations:
-      required: true
+        - label: SAM
+          required: false
+        - label: SAM Manager
+          required: false
+        - label: MES
+          required: false
+        - label: WMS
+          required: false
+        - label: RGT
+          required: false
+        - label: Web API
+          required: false
+        - label: JSON Import
+          required: false
+        - label: JSON Generator
+          required: false
+        - label: Portali
+          required: false
   - type: textarea
     id: steps
     attributes:
