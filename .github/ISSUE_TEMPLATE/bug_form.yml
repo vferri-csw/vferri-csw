@@ -47,19 +47,6 @@ body:
         - JSON Generator
         - Portali
   - type: textarea
-    id: steps
-    attributes:
-      label: Per riprodurlo
-      description: Passi per riprodurre il comportamento
-      value: " 1. Vai in '...'
-        2. Clicca su '....'
-        3. Spostati in '....'
-        4. Inserisci i valori '....'
-        5. Visualizza l'errore"
-      placeholder:      
-      validations:
-        required: true
-  - type: textarea
     attributes:
       label: Per riprodurlo
       description: Passi per riprodurre il comportamento
@@ -68,5 +55,20 @@ body:
           2. Clicca su '....'
           3. Spostati in '....'
           4. Inserisci i valori '....'
-          5. Visualizza l'errore"
-      render: markdown        
+          5. Visualizza l'errore
+      render: markdown
+      validations:
+        required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Comportamento aspettato
+      description: Chiara e concisa descrizione del comportamento aspettato
+      placeholder: 
+      validations:
+        required: false
+    - type: textarea
+      id: additional
+      attributes:
+        label: Contenuti aggiuntivi
+        description: Eventuali informazioni aggiuntive relative al problema.
