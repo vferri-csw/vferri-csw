@@ -1,7 +1,7 @@
 name: "\U0001F41B Segnalazione di Bug"
 description: Template per segnalare un bug
-title: "[Bug]: "
-labels: ["bug",]
+title: "[BUG]: "
+labels: ["bug"]
 assignees:
   - 
 body:
@@ -10,20 +10,19 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: description
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Descizione
+      description: Chiara e concisa descrizione che identifica il bug
+      placeholder: 
     validations:
-      required: false
-  - type: textarea
-    id: what-happened
+      required: true
+  - type: input
+    id: company
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Azienda dove riprodurlo
+      description: Codice azienda e relativa collocazione (nome server) su cui si verifica la problematica
+      placeholder: 
     validations:
       required: true
   - type: dropdown
@@ -37,26 +36,55 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: application
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Applicativo dove riprodurlo
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - SAM
+        - SAM Manager
+        - MES
+        - WMS
+        - RGT
+        - Web API
+        - JSON Import
+        - JSON Generator
+        - Portali
   - type: textarea
-    id: logs
+    id: steps
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Per riprodurlo
+      description: Passi per riprodurre il comportamento
+      value: " 1. Vai in '...'
+        2. Clicca su '....'
+        3. Spostati in '....'
+        4. Inserisci i valori '....'
+        5. Visualizza l'errore"
+      placeholder:      
+      validations:
+        required: true
+        
+  - type: textarea
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Per riprodurlo
+      description: Passi per riprodurre il comportamento
+      value: |
+          1. Vai in '...'
+          2. Clicca su '....'
+          3. Spostati in '....'
+          4. Inserisci i valori '....'
+          5. Visualizza l'errore"
+      render: markdown        
+- type: input
+    id: expected
+    attributes:
+      label: Comportamento aspettato
+      description: Chiara e concisa descrizione del comportamento aspettato
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contenuti aggiuntivi
+      description: Eventuali informazioni aggiuntive relative al problema.
