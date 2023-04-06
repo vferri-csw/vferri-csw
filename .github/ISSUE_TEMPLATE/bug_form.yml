@@ -63,7 +63,6 @@ body:
     attributes:
       label: Contenuti aggiuntivi
       description: "Eventuali informazioni aggiuntive relative al problema."
-      value: " "
       render: markdown
     validations:
       required: true
