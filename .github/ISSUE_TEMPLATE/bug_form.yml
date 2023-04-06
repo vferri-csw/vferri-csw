@@ -51,11 +51,12 @@ body:
       render: markdown
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expected
     attributes:
       label: Comportamento aspettato
       description: "Chiara e concisa descrizione del comportamento aspettato"
+      render: markdown
     validations:
       required: false
   - type: textarea
