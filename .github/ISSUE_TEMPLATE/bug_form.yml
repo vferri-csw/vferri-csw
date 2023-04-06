@@ -51,3 +51,10 @@ body:
       render: markdown
     validations:
       required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Comportamento aspettato
+      description: "Chiara e concisa descrizione del comportamento aspettato"
+    validations:
+      required: true
