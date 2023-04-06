@@ -71,13 +71,13 @@ body:
           5. Visualizza l'errore"
       render: markdown        
   - type: input
-      id: expected
-      attributes:
-        label: Comportamento aspettato
-        description: Chiara e concisa descrizione del comportamento aspettato
-        placeholder: 
-      validations:
-        required: false
+    id: expected
+    attributes:
+      label: Comportamento aspettato
+      description: Chiara e concisa descrizione del comportamento aspettato
+      placeholder: 
+    validations:
+      required: false
     - type: textarea
       id: additional
       attributes:
