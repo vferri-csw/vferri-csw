@@ -24,13 +24,3 @@ body:
     attributes:
       label: Applicativo dove riprodurlo
       multiple: true
-      options:
-        - SAM
-        - SAM Manager
-        - MES
-        - WMS
-        - RGT
-        - Web API
-        - JSON Import
-        - JSON Generator
-        - Portali
