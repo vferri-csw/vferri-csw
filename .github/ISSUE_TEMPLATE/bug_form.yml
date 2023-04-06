@@ -46,8 +46,6 @@ body:
         - JSON Import
         - JSON Generator
         - Portali
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: Per riprodurlo
