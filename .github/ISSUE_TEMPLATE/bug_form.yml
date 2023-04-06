@@ -57,4 +57,11 @@ body:
       label: Comportamento aspettato
       description: "Chiara e concisa descrizione del comportamento aspettato"
     validations:
-      required: true
+      required: false
+  -type: input
+    id: additional
+    attributes:
+      label: Contenuti aggiuntivi
+      description: "Eventuali informazioni aggiuntive relative al problema"
+    validations:
+      required: false
