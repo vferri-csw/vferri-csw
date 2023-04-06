@@ -70,16 +70,3 @@ body:
           4. Inserisci i valori '....'
           5. Visualizza l'errore"
       render: markdown        
-  - type: input
-    id: expected
-    attributes:
-      label: Comportamento aspettato
-      description: Chiara e concisa descrizione del comportamento aspettato
-      placeholder: 
-      validations:
-        required: false
-    - type: textarea
-      id: additional
-      attributes:
-        label: Contenuti aggiuntivi
-        description: Eventuali informazioni aggiuntive relative al problema.
