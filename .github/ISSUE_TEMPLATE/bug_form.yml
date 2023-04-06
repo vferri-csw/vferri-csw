@@ -13,3 +13,12 @@ body:
       placeholder: 
     validations:
       required: true
+  - type: input
+    id: company
+    attributes:
+      label: Azienda dove riprodurlo
+      description: Codice azienda e relativa collocazione (nome server) su cui si verifica la problematica
+      placeholder: 
+    validations:
+      required: true
+
