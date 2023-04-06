@@ -59,16 +59,3 @@ body:
       render: markdown
       validations:
         required: true
-  - type: input
-    id: expected
-    attributes:
-      label: Comportamento aspettato
-      description: Chiara e concisa descrizione del comportamento aspettato
-      placeholder: 
-      validations:
-        required: false
-    - type: textarea
-      id: additional
-      attributes:
-        label: Contenuti aggiuntivi
-        description: Eventuali informazioni aggiuntive relative al problema.
