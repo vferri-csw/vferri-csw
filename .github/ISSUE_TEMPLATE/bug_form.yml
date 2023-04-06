@@ -36,5 +36,3 @@ body:
         - JSON Import
         - JSON Generator
         - Portali
-    validations:
-      required: true
