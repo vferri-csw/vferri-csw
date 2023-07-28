@@ -100,9 +100,9 @@ body:
     attributes:
       label: Contenuti aggiuntivi
       description: Eventuali informazioni aggiuntive relative al problema.
-  - type: dropdown
+  - type: input
     id: watcher
     attributes:
       label: Per conoscenza
-      options:
-        - vferri-csw
+      description: Team interessato nel ricevere notifiche
+      value: '@vferri-csw'
