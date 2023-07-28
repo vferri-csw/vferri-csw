@@ -100,10 +100,10 @@ body:
     attributes:
       label: Contenuti aggiuntivi
       description: Eventuali informazioni aggiuntive relative al problema.
-- type: markdown
-  attributes:
-    value: "## Per conoscenza"
-- type: markdown
-  attributes:
-    value: |
-      @vferri-csw
+  - type: markdown
+    attributes:
+      value: "## Per conoscenza"
+  - type: markdown
+    attributes:
+      value: |
+        @vferri-csw
