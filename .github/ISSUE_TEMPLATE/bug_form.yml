@@ -100,9 +100,11 @@ body:
     attributes:
       label: Contenuti aggiuntivi
       description: Eventuali informazioni aggiuntive relative al problema.
-  - type: input
-    id: watcher
-    attributes:
-      label: Per conoscenza
-      description: Team interessato nel ricevere notifiche
-      value: '@vferri-csw'
+- type: markdown
+  attributes:
+    value: "## Per conoscenza"
+- type: markdown
+  attributes:
+    value: |
+      @vferri-csw
+      |
