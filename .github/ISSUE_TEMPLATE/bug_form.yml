@@ -102,7 +102,7 @@ body:
       description: Eventuali informazioni aggiuntive relative al problema.
   - type: markdown
     attributes:
-      value: "## Per conoscenza"
+      value: "#### Per conoscenza"
   - type: markdown
     attributes:
       value: |
