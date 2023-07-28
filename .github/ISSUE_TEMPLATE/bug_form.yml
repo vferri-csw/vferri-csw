@@ -105,6 +105,6 @@ body:
     attributes:
       label: Per conoscenza
       options:
-        - @vferri-csw
+        - '@vferri-csw'
       value: '@vferri-csw'
       
