@@ -105,5 +105,5 @@ body:
     attributes:
       label: Team in ascolto
       description: Team interessati alla ricezione di notifiche
-      value: @vferri-csw
+      value: '@vferri-csw'
       
