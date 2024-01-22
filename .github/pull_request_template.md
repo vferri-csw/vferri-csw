@@ -1,6 +1,4 @@
-Please go the the `Preview` tab and select the appropriate sub-template:
+Per selezionare il sub-template appropriato spostati nella tab `Preview` e seleziona il link desiderato:
 
-* [BUG](?expand=1&template=bug_pull_request_template.md)
-* [FEATURE](?expand=1&template=feature_pull_request_template.md)
-
-Questa è la descrizione della mia pull request - [#9999](https://github.com/centrosoftware-dev/std/issues/9999)
+* [Correzione bug](?expand=1&template=bug_pull_request_template.md)
+* [Feature o miglioramenti](?expand=1&template=feature_pull_request_template.md)
