@@ -1,13 +1,12 @@
-name: 🐛 Segnalazione Bug
-description: Template per segnalare un bug
-title: "[BUG] "
-labels: ["bug"]
+name: 💬 Nuova segnalazione
+description: Template per inserire una nuova segnalazione
+labels: ["triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        # ❕ Non dimenticarti di assegnare la issue al team corretto
-        Imposta nel campo ''Assignees'' uno dei seguenti team:
+        ## ❕ Non dimenticarti di assegnare la issue al team corretto
+        Imposta nel campo _Assignees_ il team di competenza:
         * @team-core-csw
         * @team-afc-csw
         * @team-manufacturing-csw
@@ -17,41 +16,42 @@ body:
     id: descrizione
     attributes:
       label: Descrizione
-      description: Chiara e concisa descrizione che identifica il bug.
+      description: Chiara e concisa descrizione che identifica il comportamento riscontrato.
       placeholder: | 
-        Non dimenticare di riportare l'eventuale testo di errore in chiaro! 
-        Aiuterà a ritrovarlo più facilmente in futuro.
+        Non dimenticare di riportare in modo testuale eventuali messaggi mostrati dall'applicazione. 
+        Questo consentirà di ricercarli in modo agevole in futuro.
     validations:
       required: true
   - type: input
     id: azienda
     attributes:
       label: Azienda dove riprodurlo
-      description: Codice azienda e relativa collocazione (nome server) su cui si verifica la problematica.
+      description: Codice azienda e relativa collocazione (nome server) su cui si riproduce il comportamento riscontrato.
       placeholder: ex. "<NOME SERVER>.<NOME DATABASE>" oppure "<NOME CLIENTE> - <CODICE AZIENDA>"
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
+      label: Cliente
+      description: Su quale cliente si è ricontrato il comportamento?
+      options:    
+        - Centro Software s.p.a.
+        - Vittorio Ferri
+        - Ecc...
+  - type: dropdown
+    id: version
+    attributes:
       label: Versione
-      description: Su quale versione di SAM si è verificato l'errore?
-      options:
-        - 6.2.0.5
-        - 6.2.0.4
-        - 6.2.0.3
-        - 6.2.0.2
-        - 6.2.0.1
-        - 6.2.0.0
-        - 6.1.0.3
-        - 6.1.0.2
-        - 6.1.0.1
-        - 6.1.0.0
-        - 6.0.0.2
-        - 6.0.0.1
-        - 6.0.0.0
+      description: Su quale versione di SAM si è ricontrato il comportamento?
+      options:    
+        - 6.8.0.35
+        - 6.7.0.56
+        - 6.6.0.5
+        - 6.5.0.8
         - RC
         - DEVELOP        
+        - 5.0
     validations:
       required: true
   - type: dropdown
@@ -71,6 +71,8 @@ body:
         - JSONImport
         - JSONGenerator
         - Portali
+        - Tools
+        - BPM
   - type: textarea
     id: riprodurre
     attributes:
@@ -81,7 +83,7 @@ body:
         2. Clicca su  '....'
         3. Spostati in '....'
         4. Inserisci i valori '....'
-        5. Visualizza l'errore
+        5. ...
     validations:
       required: true
   - type: textarea
@@ -93,17 +95,16 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: Se necessario aggiungere screenshots per aiutare ad esporre la problematica.
+      description: Se necessario aggiungere screenshots per aiutare ad esporre la casistica.
       placeholder: Puoi incollare direttamente le immagini, utilizzare il drag&drop o utilizzare i pulsanti dell'editor
   - type: textarea
     id: aggiuntivi
     attributes:
       label: Contenuti aggiuntivi
-      description: Eventuali informazioni aggiuntive relative al problema.
-  - type: markdown
+      description: Eventuali informazioni aggiuntive.
+  - type: textarea
+    id: watcher
     attributes:
-      value: "#### Per conoscenza"
-  - type: markdown
-    attributes:
-      value: |
-        @vferri-csw
+      label: Per conoscenza
+      description: Team menzionati per ricezione notifiche
+      value: '@centrosoftware-dev/hd1'
