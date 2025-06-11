@@ -31,7 +31,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: cliente
     attributes:
       label: Cliente
       description: Su quale cliente si è ricontrato il comportamento?
