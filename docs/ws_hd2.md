@@ -32,9 +32,10 @@
 
 # 5.0 vs 6.X
 
-| Descrizione                     | 5.0  | 6.X   | Note                                             |
-| ------------------------------- | ---- |------ | ------------------------------------------------ | 
-| Directory installazione dedicata| ✅  |  ❌   | In versione `6.X` il web service risiede in SAMW |
-| CU web                          | ✅  |  ❌   | In versione `6.X` esegue tutto il CU di SAM |
+| Descrizione                           | 5.0  | 6.X   | Note                                               |
+| ------------------------------------- | ---- |------ | -------------------------------------------------- | 
+| Tecnologia                            | SOAP | REST  |                                                    |
+| Directory installazione dedicata [^2] | ✅  |  ❌   | In versione `6.X` il web service risiede in `\Gest\SAMW` |
+| CU web                                | ✅  |  ❌   | In versione `6.X` esegue tutto il CU di SAM        |
 
-
+[^2]: La presenza di una directory dedicata potrebbe comportare disallineamenti di file `.bpl`
