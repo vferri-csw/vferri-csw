@@ -1,3 +1,4 @@
+# Verbs
 
 | Verb     | Meaning               | Status code |
 | -------- | --------------------- | ----------- |
@@ -28,3 +29,12 @@
 | Status code | Meaning    |
 | ----------- | ---------- | 
 | `500`       | Internal Server Error    |
+
+# 5.0 vs 6.X
+
+| Descrizione                     | 5.0  | 6.X   | Note                                             |
+| ------------------------------- | ---- |------ | ------------------------------------------------ | 
+| Directory installazione dedicata| ✅  |  ❌   | In versione `6.X` il web service risiede in SAMW |
+| CU web                          | ✅  |  ❌   | In versione `6.X` esegue tutto il CU di SAM |
+
+
