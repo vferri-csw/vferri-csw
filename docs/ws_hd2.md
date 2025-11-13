@@ -39,3 +39,12 @@
 | CU web                                | ✅  |  ❌   | In versione `6.X` esegue tutto il CU di SAM        |
 
 [^2]: La presenza di una directory dedicata potrebbe comportare disallineamenti di file `.bpl`
+
+
+| URL         | Method    | Description                                                          |
+| ----------- | --------- | -------------------------------------------------------------------- |
+| `/artico`   | `GET`     | Restituisce l'elenco di tutti gli articoli                           |
+| `/artico/1` | `GET`     | Restituisce l'articolo con id 1                                      |
+| `/artico`   | `POST`    | Crea un nuovo articolo con i dati specificati nel body               |
+| `/artico/1` | `PUT`     | Modifica l'articolo con id 1 utilizzando i dati specificati nel body |
+| `/artico/1` | `DELETE`  | Cancella l'articolo con id 1                                         |
