@@ -1,6 +1,6 @@
-# Verbs
+# Methods
 
-| Verb     | Meaning               | Status code |
+| Method     | Meaning               | Status code |
 | -------- | --------------------- | ----------- |
 | `GET`    | Recupero informazioni | `200`       |
 | `POST`   | Inserimento           | `201`       |
