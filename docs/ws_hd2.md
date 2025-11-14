@@ -48,3 +48,8 @@
 | `/artico`   | `POST`    | Crea un nuovo articolo con i dati specificati nel body               |
 | `/artico/1` | `PUT`     | Modifica l'articolo con id 1 utilizzando i dati specificati nel body |
 | `/artico/1` | `DELETE`  | Cancella l'articolo con id 1                                         |
+
+| Flag Web Service in ERPConnect         | Significato |
+| ---| ---|
+| `True` | L'errore è legato ad una chiamata di **competenza** della **web API di SAM** |
+| `False`| L'errore è legato ad una chiamata di **competenza** dei **portali web** | 
