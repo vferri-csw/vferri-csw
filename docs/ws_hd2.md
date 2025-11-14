@@ -36,9 +36,9 @@
 | ------------------------------------- | ---- |------ | -------------------------------------------------- | 
 | Tecnologia                            | SOAP | REST  |                                                    |
 | Directory installazione dedicata [^2] | ✅  |  ❌   | In versione `6.X` il web service risiede in `\Gest\SAMW` |
-| CU web                                | ✅  |  ❌   | In versione `6.X` esegue tutto il CU di SAM        |
+| Aggiornamento con CU in directory dedicata | ✅  |  ❌   | Tipicamente in `5.0` il web service risiede sul server Web|
 
-[^2]: La presenza di una directory dedicata potrebbe comportare disallineamenti di file `.bpl`
+[^2]: La presenza di una directory dedicata potrebbe comportare disallineamenti di file `.bpl`. L'esecuzione di un CU sulla directory di SAM richiede l'esecuzione anche sulla directory del web service.
 
 
 | URL         | Method    | Description                                                          |
