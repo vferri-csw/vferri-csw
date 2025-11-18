@@ -1,7 +1,7 @@
 # Naming convention
 
 I nomi delle classi, metodi e funzioni devono essere parlanti ed esplicativi.
-Utilizzare l'inglese per assegnare i nomi di classi, metodi, proprietà, variabili, ecc..
+La lingua da utilizzare è l'inglese.
 
 1. Utilizzare la convenzione CamelCase (PascalCase)
 2. Tutte le parole riservate colorate dall’IDE Delphi devono essere in minuscolo
@@ -30,3 +30,10 @@ for I := 0 to 10 do       //  Correct, begin appears on a separate line
 begin
 end;
 ```
+9. 
+
+10. Evitare nomi criptici o eccessivamente lunghi
+    
+:x: `CSGetVerAppFromCodInsV2`
+:x: `CSGetVersionApplicationFromInstallationCodeVersion2`
+:v: `ERPVersionFromInstallationCode`
