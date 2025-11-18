@@ -11,7 +11,8 @@ La lingua da utilizzare è l'inglese.
    -   `A` parametri di metodi
    -   `L` variabili locali
 4. Le costanti che contengono stringhe o numerici fissi sono tutte in maiuscolo con i nomi separati da under-score (Snake Case)
-   `ERP_EXE_NAME` [^1]
+   `ERP_EXE_NAME` [^1].
+
    Le **const** locali che non contengono magic word/number seguono la convenzione del punto 3.
 
 [^1]: Sentire FLuzzi per escludere da sonar il controllo sul case della constante.
@@ -20,7 +21,8 @@ La lingua da utilizzare è l'inglese.
    Eccezion fatta per gli attributi.
    
 6. Se si decide di utilizzare l'enumerato senza la clausola `{$SCOPEDENUMS ON}` gli elementi devono iniziare con un prefisso minuscolo, costruito con le iniziali delle parole che costituiscono il nome del tipo enumerato.
- `TExpressionComparisonOperator = (ecoEqual, ecoNotEqual, ..)`
+
+   `TExpressionComparisonOperator = (ecoEqual, ecoNotEqual, ..)`
 
 8. Lo statement **begin** deve essere sempre posto a capo dello statement precedente 
 ```delphi
@@ -39,8 +41,8 @@ end;
 
 11. Evitare nomi criptici o eccessivamente lunghi
 
-   :x: `CSGetVerAppFromCodInsV2`
-   
-   :x: `CSGetVersionApplicationFromInstallationCodeVersion2`
-   
-   :v: `ERPVersionFromInstallationCode`
+| Nome                                                | Approvato |
+|-----------------------------------------------------|-----------|
+|`CSGetVerAppFromCodInsV2`                            |    ❌    |
+|`CSGetVersionApplicationFromInstallationCodeVersion2`|    ❌    |
+|`ERPVersionFromInstallationCode`                     |    ✔️    |
