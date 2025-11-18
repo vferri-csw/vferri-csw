@@ -30,10 +30,17 @@ for I := 0 to 10 do       //  Correct, begin appears on a separate line
 begin
 end;
 ```
-9. 
+9. I nomi delle resourcestring devono rispettare le seguenti regole:
+   - iniziare con `RS_`
+   - proseguire con contesto di appartenenza
+   - terminare con una descrizione sintetica e parlante del contenuto scritta in PascalCase
+     
+   `RS_WebService_FileNotFound`
 
-10. Evitare nomi criptici o eccessivamente lunghi
-    
-:x: `CSGetVerAppFromCodInsV2`
-:x: `CSGetVersionApplicationFromInstallationCodeVersion2`
-:v: `ERPVersionFromInstallationCode`
+11. Evitare nomi criptici o eccessivamente lunghi
+
+   :x: `CSGetVerAppFromCodInsV2`
+   
+   :x: `CSGetVersionApplicationFromInstallationCodeVersion2`
+   
+   :v: `ERPVersionFromInstallationCode`
