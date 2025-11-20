@@ -11,11 +11,9 @@ La lingua da utilizzare è l'inglese.
    -   `A` parametri di metodi
    -   `L` variabili locali
 4. Le costanti che contengono stringhe o numerici fissi sono tutte in maiuscolo con i nomi separati da under-score (Snake Case)
-   `ERP_EXE_NAME` [^1].
+   `ERP_EXE_NAME`
 
    Le **const** locali che non contengono magic word/number seguono la convenzione del punto 3.
-
-[^1]: Sentire FLuzzi per escludere da sonar il controllo sul case della constante.
 
 5. I tipi di dato (classi, record, tipi enumerati etc.) devono iniziare con la lettera `T` maiuscola
    Eccezion fatta per gli attributi.
